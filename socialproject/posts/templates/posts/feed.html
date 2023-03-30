@@ -90,7 +90,8 @@
             url:'/posts/like/',
             data:{post_id:post_id,csrfmiddlewaretoken :window.CSRF_TOKEN}
         })
-        window.location.href="http://localhost:7000/posts/feed/"
+        // window.location.href="http://localhost:7000/posts/feed/"
+        location.reload()
 
     })
 
