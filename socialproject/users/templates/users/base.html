@@ -21,7 +21,7 @@
                         <span class="font-semibold text-lg text-gray-500 ">Photo App</span>
                     </a>
                 </div>
-                <b class='text-xl'>{{request.user.first_name}}</b>
+                <b style="text-transform:uppercase;" class='text-xl'>{{request.user.first_name}}</b>
                 <!-- Website Items -->
                 <div class="space-x-1">
                     {% if request.user.is_authenticated %}
