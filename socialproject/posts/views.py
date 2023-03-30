@@ -14,6 +14,7 @@ def post_create(request):
             new_item = form.save(commit=False)
             new_item.user = request.user
             new_item.save()
+            return redirect('feed')
     else:
         form =PostCreateForm(data=request.GET)
     return render(request,'posts/create.html',{'form':form})

@@ -19,7 +19,13 @@
         <button class="text-white bg-green-500 px-5 py-2" type="submit">Login</button>
     
     </form>
+
 </div>
+<div class="container py-5 px-10">
+    <label class="block text-gray-700 text-xl font-bold mb-2" for="">Dont have Account?</label>
+    <a class="text-white bg-green-500 px-5 py-2" href="{% url 'register' %}">Register</a>
+</div>
+
 
 <p class="px-10 py-10"><a class='text-indigo-500' href="{% url 'password_reset' %}">Forget password? Click here to reset</a></p>
 {% endblock body %}

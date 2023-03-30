@@ -46,6 +46,10 @@
             <div class="font-bold text-xl mb-2">{{post.title}}</div>
             <p class="text-gray-700 text-base">{{post.caption}}</p>
         </div>
+        <div>
+            <b class="text-xl">Comments</b>
+        </div>
+        
         <div class="px-5 py-5">
             
             {% for com in post.comment.all %}
